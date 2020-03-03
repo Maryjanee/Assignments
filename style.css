@@ -1,0 +1,302 @@
+:root {
+  --pink-color: hsl(322, 100%, 66%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+
+}
+body{
+  background:  hsl(214, 64%, 98%);
+}
+
+li{list-style-type: none;}
+
+a {
+  text-decoration: none;
+}
+nav,footer, section{
+    padding: 2rem 4rem;
+}
+h1, h2, h3,h4,h5,h6{
+    color: hsl(192, 100%, 9%);
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+  font-size: 2rem;
+  margin:1.5rem;
+}
+
+nav{
+  display:flex;
+  justify-content: space-between;
+  width:100vw;
+  align-items: center;
+
+}
+
+/* #logo-img{
+  width:10rem;
+  height:3rem
+}
+#logo-img img{
+  width:100%;
+  height: 100%;
+} */
+
+#try-btn{
+  background-color: white;
+  border: 0;
+  color: hsl(265, 100%, 66%);
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  font-size:1rem;
+  border-radius: 5px;
+}
+header, aside{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+}
+.illustration{
+  width:55%;
+  margin: 3rem 0;
+}
+.illustration img{
+  width:100%;
+}
+.intro-content{
+  width:50%;
+  text-align: center;
+  margin:2rem 0;
+
+}
+.intro-content h1{
+  margin:1.5rem 0;
+
+}
+
+.intro-content p{
+  letter-spacing: .5px;
+
+  font-size: 1.1rem;
+  padding:0 1rem;
+  text-align: justify;
+  line-height: 1.6;
+
+}
+.get-started-btn{
+  background:hsl(322, 100%, 66%);
+  padding:1rem 5rem;
+  color:white;
+  font-size:.9rem;
+  border-radius: 3px;
+  border:0;
+  margin-top: 1.5rem;
+}
+
+#more-desc{
+  display:flex;
+  align-items: center;
+  margin-top:20rem;
+
+}
+.illustration-users{
+  width:40rem;
+}
+.illustration-users img{
+  width:100%;
+}
+.items-container{
+  display: flex;
+  flex-direction: column;
+  margin-left:9rem;
+}
+.item{
+  width:35vw;
+  padding:0 1.5rem;
+  margin:1.5rem 0;
+}
+.item h2{
+  margin-bottom:1rem;
+}
+
+
+aside {
+  width:50%;
+  border:0;
+  border-radius: 1rem;
+  margin:20rem auto;
+  height:30rem;
+  box-shadow: -5px -17px 50px -7px rgba(30,34,36,0.35)
+}
+footer{
+  background:  hsl(192, 100%, 9%);
+  height:50vh;
+  overflow-y: hidden:
+
+}
+
+.footer-logo{
+  filter: invert(43%) sepia(23%) saturate(852%) hue-rotate(27deg) brightness(111%) contrast(9%);
+}
+.footer-content{
+  margin: 1rem 0;
+  display:grid;
+  grid-template-columns:3fr 2fr 2fr 3fr;
+  color: white;
+  align-self: center;
+  grid-column-gap: 2rem:
+}
+.social{
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+.social div{
+  margin: 0 .3rem ;
+}
+.footer-item p{
+  font-size:.8rem;
+}
+.footer-item p,li,.subscribe h3, .subscribe input, .subscribe p,.social{
+  margin-bottom:1rem;
+}
+.subscribe{
+  width:23rem;
+
+}
+ .subscribe h3{
+  color:white;
+  text-transform: uppercase;
+}
+#subscribe-form input:first-child{
+  width:100%;
+  height:2.5rem;
+  padding: 0 .8rem;
+}
+#subscribe-btn{
+  background:hsl(322, 100%, 66%);
+  color:white;
+  width:50%;
+  height:2.2rem;
+  margin-left:50%;
+  border:0;
+
+}
+@media(max-width:375px){
+nav,header,footer,section,#more-desc{
+  padding:1.5rem;
+  width:100vw;
+  overflow: hidden;
+}
+.logo-img{
+  width:8rem;
+}
+.logo-img img{
+  width:100%;
+}
+#try-btn{
+width:8rem;
+height:3rem;
+font-size:.8rem;
+text-align: center;
+padding:1rem 1.5rem;
+}
+
+
+
+  .footer-content{
+    display: flex;
+    flex-direction:column;
+
+  }
+  header{
+    display: flex;
+    flex-direction: column;
+    width:80vw;
+    padding:2rem;
+    margin: auto;
+  }
+  .illustration,.intro-content,.illustration-users, .items-container, .item, .subscribe{
+    width:80vw;
+  }
+  .illustration img{
+    width:100%;
+  }
+  .intro-content h1{
+    font-size: 1.5rem;
+  }
+  .intro-content p{
+  text-align: justify;
+  font-size: 1rem;
+  }
+  .get-started-btn{
+
+    text-align: center;
+    padding:1rem 2rem;
+  }
+  #more-desc{
+    display:block;
+    margin-top:2rem;
+  }
+  .items-container{
+    justify-content: center;
+    margin:3rem auto;
+    text-align: center;
+  }
+  .item{
+    padding:0;
+  }
+  aside{
+    margin-top: 2rem;
+    height:15rem;
+    padding:1.5rem 1rem;
+    border-radius: .2px;
+      width:85vw;
+  }
+  aside h1{
+    font-size: 1.3rem;
+
+  }
+  aside p{
+      font-size: .8rem;
+    }
+    aside input{
+      padding:1rem 1.5rem;
+    }
+    footer{
+      height:80vh;
+      font-size:.5rem;
+    }
+    .footer-logo{
+      width:1rem;
+    }
+    .social,.social p{
+      justify-content:center;
+    }
+
+    .social div{
+      width:2rem;
+    }
+    .footer-item{
+      order:1;
+    }
+    .subscribe{
+      padding:0;
+      margin-bottom:3rem;
+    }
+    #subscribe-btn{
+      width:100%;
+      margin-left:0;
+    }
+
+
+}
